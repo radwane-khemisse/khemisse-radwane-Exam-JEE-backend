@@ -10,5 +10,7 @@ import java.util.List;
 
 @Repository
 public interface RemboursementRepository extends JpaRepository<Remboursement, Long> {
-
+    List<Remboursement> findByCreditId(Long creditId);
+    List<Remboursement> findByType(RemboursementType type);
+    List<Remboursement> findByDateBetween(Date startDate, Date endDate);
 } 
