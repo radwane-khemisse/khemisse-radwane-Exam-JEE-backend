@@ -8,6 +8,7 @@ public enum TypeBien {
     private final String label;
     
     TypeBien(String label) {
+
         this.label = label;
     }
     
